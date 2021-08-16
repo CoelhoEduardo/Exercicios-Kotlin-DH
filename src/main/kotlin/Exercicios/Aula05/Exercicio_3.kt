@@ -5,6 +5,6 @@ fun main() {
 
 }
 
-fun parOuImpar(numero: Int): Boolean{
+fun parOuImpar(numero: Int): Boolean {
     return numero % 2 == 0
 }

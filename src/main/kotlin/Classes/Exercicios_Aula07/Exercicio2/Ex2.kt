@@ -6,7 +6,7 @@ fun main() {
     val treinoEdu = SessaoDeTreinamento(jogador1.experiencia)
     treinoEdu.treinoA(jogador1)
     println("=====================================")
-    val jogador2 = JogadorDeFutebol("Kaka", 100, 100, 0,10)
+    val jogador2 = JogadorDeFutebol("Kaka", 100, 100, 0, 10)
     println("Jogador: ${jogador2.nome}")
     val treinoKa = SessaoDeTreinamento(jogador2.experiencia)
     treinoKa.treinoA(jogador2)

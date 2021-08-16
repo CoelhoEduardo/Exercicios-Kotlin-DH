@@ -11,7 +11,7 @@ class JogadorDeFutebol(var nome: String, var energia: Int, var alegria: Int, var
 
     }
 
-    fun correr(): Unit{
+    fun correr(): Unit {
         energia += 10
         return println("Cansei")
     }

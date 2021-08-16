@@ -1,4 +1,4 @@
-package Classes.Exercicios_Aula09
+package Classes.Exercicios_Aula09.exercicio_1
 
 class Curso(
     var nome: String,
