@@ -5,8 +5,9 @@ import java.util.Calendar.DATE
 import java.util.Calendar.MONTH
 import java.util.Calendar.YEAR
 
+
 val cabecalhoDoComprovante: () -> String = {
-    ("##########DH SuperMarket##########")
+    "##########DH SuperMarket##########"
 }
 
 val dataDaCompra: () -> String = {
@@ -14,17 +15,16 @@ val dataDaCompra: () -> String = {
     "${data.get(DATE)}/${data.get(MONTH)}/${data.get(YEAR)}"
 }
 
-val imprimeListaDeCompras: ( lista: ArrayList<Produto>) -> Unit = {
+val imprimeListaDeCompras: (lista: ArrayList<Produto>) -> Unit = {
     for (item in it) {
         println("${item.nome}: R$${item.preco}")
     }
-val adicionaRodape: (lista: ArrayList<Produto>) -> Unit = {
-    var total = 0.0
-    for (item in it){
-        total += item.preco
-    }
-    total
-
 }
 
+val adicionaRodape: (lista: ArrayList<Produto>) -> Double = {
+    var total = 0.0
+    for (lista in it) {
+        total += lista.preco
+    }
+    total
 }

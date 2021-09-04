@@ -9,7 +9,7 @@ class Caixa() {
         dataDaCompra: () -> String,
         listaDeProdutos: ArrayList<Produto>,
         imprimeListaDeCompras: (ArrayList<Produto>) -> Unit,
-        adicionaRodape: (ArrayList<Produto>) -> Unit
+        adicionaRodape: (ArrayList<Produto>) -> Double
     ) {
         cabecalhoDoComprovante.invoke()
         println(dataDaCompra.invoke())
